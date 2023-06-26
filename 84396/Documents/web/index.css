@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./img/tải\ xuống.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+
+    overflow-x: hidden;
+
+}
+
+
+
+.pagetop {
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+
+    position: relative;
+
+    backdrop-filter: blur(40px);
+}
+
+.pagetop--logo {
+    font-size: 40px;
+
+    padding-right: 200px;
+    padding-left: 50px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+
+}
+
+.menu a {
+    font-size: 22px;
+
+    position: relative;
+
+    color: black;
+
+    transition: 0.5s;
+}
+
+.pagetop--ul li a::after {
+    content: "";
+
+    background: #435744;
+
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    bottom: -6px;
+
+    border-radius: 5px;
+
+    transform: scaleX(0);
+
+    transform-origin: right ;
+
+    transition: transform 0.5s;
+}
+
+.pagetop--ul li a:hover::after{
+    transform: scaleX(1);
+
+    transform-origin: left; 
+}
+
+.pagetop .pagetop--btn button{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.pagetop--btn a {
+    color: black;
+    position: relative;
+}
+
+.pagetop--btn a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    border-radius: 5px;
+
+    bottom: -6px;
+
+    background: #435744;
+
+    width: 100%;
+    height: 3px;
+
+    transform-origin:right ;
+
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.pagetop--btn a:hover::after{
+    transform: scaleX(1);
+
+    transform-origin:left;
+}
+
+.pagetop--btn {
+    padding-left: 300px;
+}
+
+
+/* content--music */
+.content--music{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content--music .music--disc{
+    position: absolute;
+
+    left: 170px;
+    top: 170px;
+
+    width: 250px;
+    height: 250px;
+
+    background-image: url(./img/vGcGkH8S85\ _\ waneella\ on\ Patreon.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 50%;
+    border-radius: 1px solid white;
+
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.music--disc--child {
+    position: absolute;
+
+    top: 250px;
+    left: 245px;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+
+
+    background-color: rgb(255, 255, 255,0.7);
+}
+
+
+
+.music--disc--child a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    top: 30px;
+
+    color: black;
+
+    font-size: 40px;
+}
+
+/* main--content */
+
+.pagetop--title  {
+    font-size: 60px;
+
+    position: relative;
+
+    top: 160px;
+    left: 500px;
+
+    color: #33CC66;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pagetop--title p {
+    font-size: 25px;
+    color: white;
+}
+
+
